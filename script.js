@@ -83,7 +83,6 @@ function renderContact(contact) {
         </div>
         <p>${contact.email}</p>
         <p>${contact.tel}</p>
-        <p>${contact.date}</p>
         <p>${contact.message}</p>
     `;
 
@@ -112,7 +111,6 @@ addBtn.addEventListener('click', (event) => {
     let contactName = document.querySelector('#name').value.trim();
     let contactEmail = document.querySelector('#email').value;
     let contactTel = document.querySelector('#phone').value;
-    let contactDate = document.querySelector('#date').value;
     let contactText = document.querySelector('#message').value.trim();
 
     
@@ -124,9 +122,6 @@ addBtn.addEventListener('click', (event) => {
     } else if (contactTel === '') {
         alert('Telephone Number is required!');
         return;
-    } else if (contactDate === '') {
-        alert('Date is required!');
-        return;
     }
 
     // Contact object
@@ -134,7 +129,6 @@ addBtn.addEventListener('click', (event) => {
         name: contactName,
         email: contactEmail,
         tel: contactTel,
-        date: contactDate,
         message: contactText
     };
 
@@ -149,7 +143,6 @@ addBtn.addEventListener('click', (event) => {
     document.querySelector('#name').value = '';
     document.querySelector('#email').value = '';
     document.querySelector('#phone').value = '';
-    document.querySelector('#date').value = '';
     document.querySelector('#message').value = '';
 
     // Text Added
