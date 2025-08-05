@@ -115,6 +115,8 @@ addBtn.addEventListener('click', (event) => {
     let contactDate = document.querySelector('#date').value;
     let contactText = document.querySelector('#message').value.trim();
 
+    
+
     // Form Validation
     if (contactName === '') {
         alert('Name is required!');
@@ -160,42 +162,7 @@ addBtn.addEventListener('click', (event) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Theme Functionality
+//THEME FUNCTIONALITY
 let headingDiv = document.querySelector('.container');
 let colorMode = document.querySelector('.theme-icon');
 let footerColor = document.querySelector('footer');
@@ -205,13 +172,7 @@ function applyDarkMode() {
     document.body.style.backgroundColor = 'black';
     document.body.style.color = 'white';
     colorMode.style.fill = 'blue';
-    //footerColor.style.backgroundColor = 'black';
-    //footerColor.style.color = 'white';
-    //footerColor.style.boxShadow = '0 -2px 4px  #ffff'
-    // Transitions
     document.body.style.transition = '2s';
-    //colorMode.style.transition = '2s';
-    //footerColor.style.transition = '2s';
 }
 
 // Function to apply Light Mode
@@ -219,13 +180,7 @@ function applyLightMode() {
     document.body.style.backgroundColor = 'white';
     document.body.style.color = 'black';
     colorMode.style.fill = 'black';
-    //footerColor.style.backgroundColor = 'white';
-    //footerColor.style.color = 'black';
-    //footerColor.style.boxShadow = '0 -2px 4px  rgba(0, 0, 0.1)'
-    // Transitions
-    //document.body.style.transition = '2s';
     colorMode.style.transition = '2s';
-    //footerColor.style.transition = '2s';
 }
 
 // Load theme on page load

@@ -160,7 +160,7 @@ textarea {
 .items-div{
     border-bottom: 1px solid black;
     margin-top: 2%;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     background-color: #B3D4FC;
     margin-bottom: 0.3rem;
     border-radius: var(--border-radius-1);
