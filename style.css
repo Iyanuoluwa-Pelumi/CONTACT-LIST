@@ -108,6 +108,10 @@ header {
     margin-bottom: 0.7rem;
 }
 
+.date-div{
+    width: 40%;
+}
+
 label {
     font-size: small;
     font-weight: 500;
@@ -127,6 +131,12 @@ textarea {
 
 textarea {
     resize: none;
+}
+
+.phone-date{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .btn {
