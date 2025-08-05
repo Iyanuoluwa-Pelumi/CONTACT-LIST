@@ -10,9 +10,8 @@
 :root {
     --container-width-lg: 80%;
     --container-width-md: 90%;
-    --border-radius-1: 1.2rem;
-    --border-radius-2: 0.8rem;
-    --border-radius-3: 0.5rem;
+    --border-radius-1: 0.8rem;
+    --border-radius-2: 0.5rem;
     --transition: all 500ms ease;
 }
 
@@ -98,7 +97,7 @@ header {
     margin-top: 2%;
     padding: 1rem;
     background-color: #B3D4FC;
-    border-radius: var(--border-radius-2);
+    border-radius: var(--border-radius-1);
     color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -114,11 +113,15 @@ label {
     font-weight: 500;
 }
 
+span{
+    color: #B22222;
+}
+
 input,
 textarea {
     padding: 0.7rem;
     border: 1px solid #ccc;
-    border-radius: var(--border-radius-3);
+    border-radius: var(--border-radius-2);
     width: 100%;
 }
 
@@ -134,9 +137,9 @@ textarea {
     gap: 0.5rem;
     background-color: #007BFF;
     color: white;
-    padding: 0.6rem 2.5rem;
+    padding: 1rem;
     border: none;
-    border-radius: var(--border-radius-3);
+    border-radius: var(--border-radius-2);
     cursor: pointer;
     transition: var(--transition);
     margin-bottom: 1rem;
@@ -154,16 +157,33 @@ textarea {
 }
 
 /* CONTACT LIST SECTION */
-.contacts-list{
-    max-width: 100%;
+.items-div{
+    border-bottom: 1px solid black;
     margin-top: 2%;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     background-color: #B3D4FC;
-    border-radius: var(--border-radius-2);
+    margin-bottom: 0.3rem;
+    border-radius: var(--border-radius-1);
     color: black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
 }
+
+.name-delete{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.item-name{
+    color: #B22222;
+}
+
+.delete-icon{
+    color:#E57373;
+    cursor: pointer;
+    transition: transform 0.2s;
+};
 
 /* FOOTER SECTION */
 footer {
@@ -190,12 +210,21 @@ footer {
         font-size: 2rem;
     }
 
+    h2{
+        font-size: 1.8rem;
+    }
+
     .contacts-container {
         margin-top: 20%;
     }
 
     .add-div {
         width: 50%;
+    }
+
+    input,
+    textarea, .btn {
+        padding: 0.8rem;
     }
 }
 
@@ -207,11 +236,11 @@ footer {
     }
 
     h1 {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .add-div {
@@ -228,7 +257,4 @@ footer {
         gap: 1rem;
     }
 
-    .btn {
-        padding: 0.6rem 1.5rem;
-    }
-}
+};
